@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import logo from "@/public/app_logo.png";
 import iconMenu from "@/public/icon_menu_black.png";
 import backIcon from "@/public/memory_header_left.png";
@@ -28,29 +28,47 @@ import TopBar from "./TopBar";
        { label: "Cvetličarne", path: "/cvetlicarne", active : false },
       { label: "Pogrebna podjetja", path: "/pogrebna-p", active : false },
     ],
-    "/4": [
-      { label: "Cvetličarne", path: "/cvetlicarne", active : false },
-      { label: " PRILOŽNOST", path: "/priloznost", active : true },
-      { label: "Pogrebna podjetja", path: "/pogrebna-podjetja", active : false },
+    "/zalna-stran": [
+      { label: "Žalna stran", path: "/zalna-stran", active : false },
+      { label: " Spominska", path: "/spominska", active : false },
     ],
-    "/5": [
-      { label: "Cvetličarne", path: "/cvetlicarne", active : false },
-      { label: "Pogrebna podjetja", path: "/pogrebna-podjetja", active : false },
-      { label: " PRILOŽNOST", path: "/priloznost", active : true },
+    "/spominska": [
+      { label: "Žalna stran", path: "/zalna-stran", active : false },
+      { label: " Spominska", path: "/spominska", active : false },
+    ],
+    "/koristno-za-cvetlicarne": [
+      { label: "Cvetličarne", path: "/koristno-za-cvetlicarne", active : false },
+      { label: " PRILOŽNOST", path: "/c-priloznost", active : true },
+      { label: "Pogrebna podjetja", path: "/koristno-za-pogrebna-podjetja", active : false },
+    ],
+    "/koristno-za-pogrebna-podjetja": [
+      { label: "Cvetličarne", path: "/koristno-za-cvetlicarne", active : false },
+      { label: "Pogrebna podjetja", path: "/koristno-za-pogrebna-podjetja", active : false },
+      { label: " PRILOŽNOST", path: "/p-priloznost", active : true },
     ],
   };
 
-function CommonHeader({ currentPage }) {
+function CommonHeader({
+  currentPage,
+  setIsModalVisible,
+  setIsMessageModalVisible,
+  setIsLocalQuickModalVisible,
+  setIsLocalQuickReviewModalVisible,
+}) {
   const pathname = usePathname();
   const linksToRender = headerLinkSets[`/${currentPage}`] || []; // Default to empty if not found
   const router = useRouter();
-
   return (
     // <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50 ">
     <header
       className={`fixed top-0 left-0 right-0 bg-white shadow-md z-50`}
     >
-      {(currentPage === "pogrebi" || currentPage =="osmrtnice") && <TopBar />}
+      {(currentPage === "pogrebi" || currentPage =="osmrtnice") && <TopBar
+        setIsModalVisible={setIsModalVisible}
+        setIsMessageModalVisible={setIsMessageModalVisible}
+        setIsLocalQuickModalVisible={setIsLocalQuickModalVisible}
+        setIsLocalQuickModalReviewVisible={setIsLocalQuickReviewModalVisible}
+      />}
       <div className=" flex w-full justify-center">
         <div
           className=" flex 

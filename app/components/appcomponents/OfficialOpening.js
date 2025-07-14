@@ -33,7 +33,7 @@ const OfficialOpening = () => {
 
                             <div className="w-[122px] h-[48px] mt-[24px] bg-gradient-to-r from-[#E3E8EC] to-[#FFFFFF] desktop:mx-auto flex justify-center items-center rounded-lg">
                             <Link
-                                href={"/companyregistrationpage"}
+                                href={"/podjetja"}
                                 className="w-[250px] h-[53px] shrink-0 rounded-full text-white flex justify-center items-center self-center shadow-custom-light-dark bg-gradient-to-b from-[#0D94E8] to-[#1860A3] text-[18px]"
                                 style={{
                                 boxShadow: '0px 4px 5px 0px #00000038, 0px 2px 3px 0px #00000073',

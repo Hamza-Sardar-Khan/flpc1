@@ -330,7 +330,7 @@ const FloritsMenuCompo = ({ setActiveButton }) => {
             </div>
 
             {/* 3rd title contianer */}
-            <Link href={"/floristspromo"}>
+            <Link href={"/koristno-za-cvetlicarne"}>
               <div className="flex flex-row items-center mt-[14px]">
                 <div className="text-[12px] font-normal text-[#41C0FF] leading-[22px] mr-[10px]">
                   Več o promociji
@@ -370,7 +370,7 @@ const FloritsMenuCompo = ({ setActiveButton }) => {
             </div>
 
             {/* 6th title contianer */}
-            <Link href={"/contactform"}>
+            <Link href={"/kontakt"}>
               <div className="flex flex-row items-center mt-[14px]">
                 <div className="text-[12px] font-normal text-[#41C0FF] leading-[22px] mr-[10px]">
                   Kontaktirajte nas

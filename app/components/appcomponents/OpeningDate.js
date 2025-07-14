@@ -39,7 +39,7 @@ const OpeningDate = () => {
               </div>
 
               <Link
-                href={"/companyregistrationpage"}
+                href={"/podjetja"}
                 className="w-[250px] h-[53px] rounded-full text-white justify-center items-center self-center shadow-custom-light-dark bg-gradient-to-b from-[#0D94E8] to-[#1860A3] hidden desktop:flex"
                 style={{
                   boxShadow: '0px 4px 5px 0px #00000038, 0px 2px 3px 0px #00000073',
@@ -64,7 +64,7 @@ const OpeningDate = () => {
             </div>
 
             <Link
-              href={"/companyregistrationpage"}
+              href={"/podjetja"}
               className="w-[122px] flex h-[48px] rounded-lg text-black justify-center items-center self-start shadow-custom-light-dark bg-gradient-to-r from-[#E3E8EC] to-[#FFFFFF] "
             >
               Začni zdaj
@@ -85,7 +85,7 @@ const OpeningDate = () => {
             </div>
           </div>
           <Link
-            href={"/companyregistrationpage"}
+            href={"/podjetja"}
             className="flex h-[48px] rounded-lg text-[#1E2125] font-variation-customOpt16 text-[16px] border-[#BCD7F4] 
         border-[2px] mt-[13px] w-full justify-center items-center self-start shadow-custom-light-dark-with-white bg-gradient-to-r  from-[#E3E8EC80] to-[#FFFFFF80] "
           >

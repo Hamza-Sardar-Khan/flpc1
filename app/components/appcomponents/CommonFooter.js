@@ -36,10 +36,31 @@ const footerLinkSets = {
     { label: "Spominske", path: "/osmrtnice " , showOnMobile: true  },
     { label: "Cvetličarne", path: "/cvetlicarne  " , showOnMobile: true  },
   ],
-  "/3": [
-    { label: "Cvetličarne", path: "/cvetlicarne " , showOnMobile: true  },
-    { label: "PRILOŽNOST", path: "/priloznost " , showOnMobile: true  },
-    { label: "Pogrebna podjetja", path: "/pogrebna-podjetja " , showOnMobile: true  },
+  "/zalna-stran": [
+    { label: "Prva stran", path: "/", showOnMobile: false },
+    { label: "Osmrtnice", path: "/osmrtnice " , showOnMobile: true  },
+    { label: "Pogrebi", path: "/pogrebi " , showOnMobile: true  },
+    { label: "Spominske", path: "/osmrtnice " , showOnMobile: true  },
+    { label: "Cvetličarne", path: "/cvetlicarne  " , showOnMobile: true  },
+  ],
+  "/spominska": [
+    { label: "Prva stran", path: "/", showOnMobile: false },
+    { label: "Osmrtnice", path: "/osmrtnice " , showOnMobile: true  },
+    { label: "Pogrebi", path: "/pogrebi " , showOnMobile: true  },
+    { label: "Spominske", path: "/osmrtnice " , showOnMobile: true  },
+    { label: "Cvetličarne", path: "/cvetlicarne  " , showOnMobile: true  },
+  ],
+  "/koristno-za-cvetlicarne": [
+    { label: "Začetna ", path: "/ " , showOnMobile: false  },
+    { label: "Cvetličarne", path: "/koristno-za-cvetlicarne " , showOnMobile: true  },
+    { label: "Priložnost", path: "/c-priloznost " , showOnMobile: true  },
+    { label: "Pogrebna", path: "/koristno-za-pogrebna-podjetja " , showOnMobile: true  },
+  ],
+    "/koristno-za-pogrebna-podjetja": [
+    { label: "Začetna ", path: "/ " , showOnMobile: false  },
+    { label: "Cvetličarne", path: "/koristno-za-cvetlicarne " , showOnMobile: true  },
+    { label: "Pogrebna", path: "/koristno-za-pogrebna-podjetja " , showOnMobile: true  },
+    { label: "Priložnost", path: "/p-priloznost " , showOnMobile: true  },
   ],
 };
 
@@ -101,7 +122,7 @@ const CommonFooter = ({ currentPage = "/" }) => {
         </div>
         <div className="inline-flex gap-[30px] mobile:gap-[16px]">
           <Link
-            href="/"
+            href="/kontakt"
             className="text-[#1860A3] underline w-[65px] text-[14px]"
           >
             Pišite nam
@@ -141,7 +162,7 @@ const CommonFooter = ({ currentPage = "/" }) => {
         </div>
         <div className="inline-flex gap-[30px] mobile:gap-[16px]">
           <Link
-            href="/"
+            href="/kontakt"
             className="text-[#1860A3] underline w-[65px] text-[14px]"
           >
             Pišite nam

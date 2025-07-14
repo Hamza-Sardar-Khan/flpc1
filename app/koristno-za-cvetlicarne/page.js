@@ -9,10 +9,11 @@ import DirectoryEntry from "../components/appcomponents/DirectoryEntry";
 import FrequentlyAskedQuestionView from "../components/appcomponents/FrequentlyAskedQuestionView";
 import OfficialOpening from "../components/appcomponents/OfficialOpening";
 import KickStart from "../components/appcomponents/KickStart";
+import CommonFooter from "../components/appcomponents/CommonFooter";
 
 const Floristspromo = () => {
     return (
-        <Layout from={"8"} forFooter={''}>
+        <Layout megaMenu={""} isMegaMenuVisible={false} from={"18"}  currentPage="koristno-za-cvetlicarne" forFooter={'memorypage'}>
             <div className="flex flex-1 flex-col mx-auto bg-gradient-to-br from-[#ECF0F3] to-[#F2F6F9]">
                 <div className="flex h-[72px] tablet:h-[80px] desktop:h-[92.02px]" />
                 <MultipleStores />
@@ -26,7 +27,8 @@ const Floristspromo = () => {
                 </div> */}
                 <OfficialOpening />
                 <KickStart />
-
+                <CommonFooter currentPage="/koristno-za-cvetlicarne"/>
+                    
             </div>
         </Layout>
     );

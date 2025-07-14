@@ -7,7 +7,7 @@ import LoginFooter from "../components/appcomponents/LoginFooter";
 const ContactForm = () => {
     return (
         <div className="flex flex-1 flex-col bg-[#F5F7F9]">
-            <HeaderRegistration/>
+            {/* <HeaderRegistration/> */}
             <ContactFormPage/>
         </div>
     )

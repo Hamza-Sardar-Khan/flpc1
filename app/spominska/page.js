@@ -8,6 +8,7 @@ import FrequentlyAskedQuestionView, { FrequentlyAskedQuestionView2 } from "../co
 import OpeningPromotion from "../components/appcomponents/OpeningPromotion";
 import AdminBenefits from "../components/appcomponents/AdminBenefits";
 import EverythingIsFree from "../components/appcomponents/EverythingIsFree";
+import CommonFooter from "../components/appcomponents/CommonFooter";
 
 const Keeperpromo = () => {
   const faqData = {
@@ -31,7 +32,7 @@ const Keeperpromo = () => {
     ],
   };
   return (
-    <Layout from={"11"} forFooter={""}>
+    <Layout from={"18"} forFooter={"memorypage"} currentPage="spominska">
       <div className="flex w-full flex-col  bg-gradient-to-br from-[#ECF0F3] to-[#F2F6F9]">
         <div className="h-[72px] tablet:h-[80px] desktop:h-[92.02px] " />
         <MemorialWithAdmin />
@@ -44,6 +45,8 @@ const Keeperpromo = () => {
         <FrequentlyAskedQuestionView2 data={faqData} />
         {/* </div> */}
         <EverythingIsFree />
+        <CommonFooter currentPage="/spominska"/>
+
       </div>
     </Layout>
   );

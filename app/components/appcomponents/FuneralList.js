@@ -155,7 +155,7 @@ const FuneralBlock = ({ item, index, key }) => {
           : "flex mt-6 tablet:mt-6 desktop:mt-8 w-full"
       }`}
     >
-      <Link href={"/funeralpromo"}>
+      <Link href={"/koristno-za-pogrebna-podjetja"}>
         <button
           className="
         flex flex-col tablet:flex-row desktop:flex-row 

@@ -76,7 +76,12 @@ const Layout = ({
       ) : from == "3" ? (
         <MemoryHeader onChange={onChangeMemory} />
       ) : from == "18" ? (
-        <CommonHeader currentPage = {currentPage} />
+        <CommonHeader currentPage = {currentPage}
+            setIsModalVisible={setIsModalVisible}
+            setIsMessageModalVisible={setIsMessageModalVisible}
+            setIsLocalQuickModalVisible={setIsLocalQuickModalVisible}
+            setIsLocalQuickReviewModalVisible={setIsLocalQuickReviewModalVisible}
+        />
 )       : (
         <>
           {from == "2" ? <div className="flex  h-[45px]" /> : null}

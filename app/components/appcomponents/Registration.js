@@ -380,7 +380,7 @@ const Registration = () => {
 
       {activeDiv == "register" && (
         <div
-          onClick={() => router.push("/companyregistrationpage")}
+          onClick={() => router.push("/podjetja")}
           style={{ cursor: "pointer" }}
           className="w-[550px] mobile:w-max-[340px] flex justify-end mobile:justify-start items-center mt-[30px] mobile:w-[310px] h-[43px]"
         >

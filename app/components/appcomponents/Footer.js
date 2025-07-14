@@ -15,10 +15,10 @@ import MemoralPopup from "./MemoralPopup";
 import Link from "next/link";
 
 const promoPathname = [
-  "/funeralpromo",
-  "/floristspromo",
-  "/memorypromo",
-  "/keeperpromo"
+  "/koristno-za-pogrebna-podjetja",
+  "/koristno-za-cvetlicarne",
+  "/zalna-stran",
+  "/spominska"
 ]
 
 export default function Footer() {
@@ -29,7 +29,7 @@ export default function Footer() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if(pathname.startsWith("/memorypromo") || pathname.startsWith("/keeperpromo")) {
+    if(pathname.startsWith("/zalna-stran") || pathname.startsWith("/spominska")) {
       setFooterVariant("memory");
     } else {
       setFooterVariant("default");

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function KickStart() {
+export default function KickStart({cUrl = ""}) {
     return (
         <div className="flex w-full flex-col items-center bg-[#FFFFFF] pt-[85px] pb-[100px]">
           <Image src="/funeral-promo-footer.png" alt="KickStart" width={94} height={94} />
@@ -16,7 +16,7 @@ export default function KickStart() {
               </div>
 
               <Link
-                href={"/companyregistrationpage"}
+                href={cUrl ? `${cUrl}`: "/c-faq"}
                 className="w-[250px] h-[53px] shrink-0 rounded-full text-white justify-center items-center self-center shadow-custom-light-dark bg-gradient-to-b from-[#0D94E8] to-[#1860A3] hidden desktop:flex"
                 style={{
                   boxShadow: '0px 4px 5px 0px #00000038, 0px 2px 3px 0px #00000073',

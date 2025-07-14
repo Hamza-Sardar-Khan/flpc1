@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const PUBLIC_ROUTES = ["/", "/registrationpage"];
+const PUBLIC_ROUTES = ["/", "/registracija"];
 
 const USER_ROUTES = [
   "/moj-racun",
@@ -26,7 +26,7 @@ export function middleware(request: NextRequest) {
   const lastSegment = pathParts[pathParts.length - 1];
 
   // ✅ If user is logged in and tries to visit /registrationpage, redirect them accordingly
-  if (pathname === "/registrationpage" && token) {
+  if (pathname === "/registracija" && token) {
     if (role === "Florist" && slugKey) {
       return NextResponse.redirect(new URL(`/c/${slugKey}/menu`, request.url));
     }
@@ -48,7 +48,7 @@ export function middleware(request: NextRequest) {
   }
 
   if (!token) {
-    return NextResponse.redirect(new URL("/registrationpage", request.url));
+    return NextResponse.redirect(new URL("/registracija", request.url));
   }
 
   if (isUserRoute && role !== "User") {
@@ -74,7 +74,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/registrationpage",
+    "/registracija",
     "/moj-racun",
     "/moji-prispevki",
     "/obletnice",

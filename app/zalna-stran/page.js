@@ -8,6 +8,7 @@ import SimpleComp from "../components/appcomponents/SimpleComp";
 import FrequentlyAskedQuestionView, { FrequentlyAskedQuestionView2 } from "../components/appcomponents/FrequentlyAskedQuestionView";
 import imgUp from "@/public/ico_up.png";
 import Image from "next/image";
+import CommonFooter from "../components/appcomponents/CommonFooter";
 
 
 
@@ -33,7 +34,7 @@ const MemoryPromo = () => {
     ],
   };
   return (
-    <Layout from={"10"} forFooter={"memorypromo"}>
+    <Layout from={"18"} forFooter={"memorypage"} currentPage="zalna-stran">
       <div className="flex flex-1 flex-col mx-auto bg-gradient-to-br from-[#ECF0F3] to-[#F2F6F9]">
         <div className="h-[72px] tablet:h-[80px] desktop:h-[92.02px] " />
         <WayToPost />
@@ -57,6 +58,8 @@ const MemoryPromo = () => {
         >
           <Image src={imgUp} alt="imgPrevious" className=" w-[24px] h-[24px]" />
         </div>
+        <CommonFooter currentPage="/zalna-stran"/>
+        
       </div>
     </Layout>
   );

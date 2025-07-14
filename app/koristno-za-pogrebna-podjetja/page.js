@@ -9,10 +9,11 @@ import FrequentlyAskedQuestionView from "../components/appcomponents/FrequentlyA
 import Indispensable from "../components/appcomponents/Indispensable";
 import OpeningDate from "../components/appcomponents/OpeningDate";
 import KickStart from "../components/appcomponents/KickStart";
+import CommonFooter from "../components/appcomponents/CommonFooter";
 
 const Funeralpromo = () => {
     return (
-        <Layout from={"4"} forFooter={''}>
+        <Layout megaMenu={""} isMegaMenuVisible={false} from={"18"}  currentPage="koristno-za-pogrebna-podjetja" forFooter={'memorypage'}>
             <div className="flex w-full flex-col  bg-gradient-to-br from-[#ECF0F3] to-[#F2F6F9]">
                 <div className="h-[72px] tablet:h-[80px] desktop:h-[92.02px] " />
                 <FuneralCompany />
@@ -20,12 +21,14 @@ const Funeralpromo = () => {
                 <Indispensable /> 
                 <FreePrice />
                 <OpeningDate />
-                <KickStart />
+                <KickStart cUrl="/p-faq" />
                 {/* <div className="flex w-full bg-[#F8F7F4] mobile:bg-gradient-to-b mobile:from-[#E6EBFA] mobile:to-[#E2EEFC]" >
                 <FrequentlyAskedQuestionView from={"7"} />
                 </div> */}
                 {/* <LastFewPages /> */}
                 {/* <WorkTogether />                                                            */}
+                <CommonFooter currentPage="/koristno-za-pogrebna-podjetja"/>
+
             </div>
         </Layout>
     );

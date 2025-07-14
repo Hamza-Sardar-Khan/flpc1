@@ -230,7 +230,7 @@ const DirectoryEntry = () => {
                         </div>
                     </div>
                     <div className="flex mobile:w-[298px] w-[99px] h-[48px] rounded-lg mt-2 items-center justify-center bg-[#BCD7F4] shadow-custom-light-dark ">
-                            <Link href={"/floristdetails"}>
+                            <Link href={"/c-primer"}>
                              <div className="text-[16px] text-[#000000] font-variation-customOpt16 font-normal " >
                                 Vzorec
                             </div>

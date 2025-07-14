@@ -63,8 +63,11 @@ const FloristsGifts = () => {
   };
 
   return (
+    <Layout megaMenu={""} isMegaMenuVisible={false} from={"18"}  currentPage="" forFooter={'memorypage'}>
     <div className="flex flex-1 flex-col bg-[#F5F7F9]">
-      <UserAccountHeader />
+
+   
+      
       <OrbetoryFormComp
         setModalVisible={handleModalVisibility}
         showForms={funcShowForms}
@@ -86,6 +89,7 @@ const FloristsGifts = () => {
         <AddFuneralModal setModalVisible={setIsModalVisible} />
       )}
     </div>
+       </Layout>
   );
 };
 

@@ -28,7 +28,7 @@ const cityOptions =  [
    
   };
   return (
-    <div className=' mx-auto w-full '>
+    <div className=' mx-auto w-full z-20'>
         
 
       <div className='relative flex tablet:justify-start desktop:justify-center items-center flex-row w-full mx-auto desktop:h-[300px] tablet:h-[284px] mobile:h-[235px]'>
