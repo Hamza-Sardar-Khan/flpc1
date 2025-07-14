@@ -51,7 +51,7 @@ const MultipleStores = () => {
 
         {/*image for mobile */}
         <Image
-          src={"/cvetlicarna_mobile.png"}
+          src={"/cvetlicarna_laptop.png"}
           width={336}
           height={217}
           className="w-[336px] h-[217px] self-center mt-[79px] hidden mobile:flex"
