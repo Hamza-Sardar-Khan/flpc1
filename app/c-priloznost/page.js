@@ -39,10 +39,6 @@ export default function Faq1() {
             <h3 className="font-medium mb-1">
               Dodatne ugodnosti za prve pridružene cvetličarne?
             </h3>
-            <img 
-              src="/icon_cancel_white.png"
-              className="absolute right-2 top-4"
-            />
           </div>
           <div>
       

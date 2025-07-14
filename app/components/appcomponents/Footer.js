@@ -489,7 +489,7 @@ export function FooterForFaq() {
         <div className="inline-flex gap-[10px] mobile:gap-[8px] text-[14px] items-center mobile:justify-center mobile:w-full">
           <Link href="/" className="text-[#DAEBF1] ">Prva stran</Link>
           <div className="w-[5px] h-[5px] bg-[#DAEBF1] rounded-full"></div>
-          <Link href="/" className="text-[#DAEBF1] ">Stran za cvetličarne</Link>
+          <Link href="/koristno-za-cvetlicarne" className="text-[#DAEBF1] ">Stran za cvetličarne</Link>
           <div className="w-[5px] h-[5px] bg-[#DAEBF1] rounded-full"></div>
           <Link href="/" className="text-[#DAEBF1] ">Pogrebna podjetja</Link>
         </div>
@@ -502,7 +502,7 @@ export function FooterForFaq() {
         <span className="text-[12px] text-[#C7C7C7] font-normal leading-[24px]">© 2025 Vse pravice zadržane</span>
         </div>
         <div className="inline-flex gap-[30px] mobile:gap-[16px]">
-          <Link href="/" className="text-[#A7C6E3] underline w-[65px] text-[14px]">Pišite nam</Link>
+          <Link href="/kontakt" className="text-[#A7C6E3] underline w-[65px] text-[14px]">Pišite nam</Link>
           <Link href="/" className="">
             <Image src={"/promo_footer_facebook_white.png"} width={18} height={18} alt="Facebook Icon" />
           </Link>
@@ -526,8 +526,8 @@ export function FooterForFaq2() {
         <div className="inline-flex gap-[10px] mobile:gap-[8px] text-[14px] items-center mobile:justify-center mobile:w-full">
           <Link href="/" className="text-[#DAEBF1]  underline">Prva stran</Link>
           <div className="w-[5px] h-[5px] bg-[#DAEBF1] rounded-full underline"></div>
-          <Link href="/" className="text-[#DAEBF1] mobile:hidden underline">Stran za cvetličarne</Link>
-          <Link href="/" className="text-[#DAEBF1] mobile:block hidden underline">Cvetličarne</Link>
+          <Link href="/koristno-za-cvetlicarne" className="text-[#DAEBF1] mobile:hidden underline">Stran za cvetličarne</Link>
+          <Link href="/koristno-za-cvetlicarne" className="text-[#DAEBF1] mobile:block hidden underline">Cvetličarne</Link>
           <div className="w-[5px] h-[5px] bg-[#DAEBF1] rounded-full underline"></div>
           <Link href="/" className="text-[#DAEBF1]  underline">Pogrebna podjetja</Link>
         </div>
@@ -540,7 +540,7 @@ export function FooterForFaq2() {
         <span className="text-[12px] text-[#C7C7C7] font-normal leading-[24px]">© 2025 Vse pravice zadržane</span>
         </div>
         <div className="inline-flex gap-[30px] mobile:gap-[16px]">
-          <Link href="/" className="text-[#A7C6E3] underline w-[65px] text-[14px]">Pišite nam</Link>
+          <Link href="/kontakt" className="text-[#A7C6E3] underline w-[65px] text-[14px]">Pišite nam</Link>
           <Link href="/" className="">
             <Image src={"/promo_footer_facebook_white.png"} width={18} height={18} alt="Facebook Icon" />
           </Link>

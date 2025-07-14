@@ -1,6 +1,6 @@
 "use client"
 
-import { FAQHeader } from "@/app/components/appcomponents/Header";
+import { FAQHeader2 } from "@/app/components/appcomponents/Header";
 import Image from "next/image";
 import { FrequentlyAskedQuestionView2, FrequentlyAskedQuestionView3 } from "../components/appcomponents/FrequentlyAskedQuestionView";
 import { FooterForFaq } from "../components/appcomponents/Footer";
@@ -33,8 +33,8 @@ export default function Faq1() {
     },
   ];
     return (
-      <div className="bg-[#F9EBD4] tablet:bg-[#F8EDE3] mobile:bg-[#E0E9F3] min-h-[100vh]">
-        <FAQHeader />
+      <div className="bg-[#ECF0F3] tablet:bg-[#F8EDE3] mobile:bg-[#E0E9F3] min-h-[100vh]">
+        <FAQHeader2 />
         <div className="w-full hidden mobile:flex gap-[16px] absolute top-[80px] left-0 right-0 justify-center items-center">
           <div className="w-[140px] h-[35px] flex items-center justify-center rounded-[2px] text-[14px] text-[#FFFFFF]" 
           style={{background: "linear-gradient(180deg, #0D94E8 4.81%, #1860A3 100%)", border: "2px solid #6D778E"}}>

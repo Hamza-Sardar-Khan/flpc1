@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FAQHeader } from "@/app/components/appcomponents/Header";
+import { FAQHeader2 } from "@/app/components/appcomponents/Header";
 import { FooterForFaq2 } from "../components/appcomponents/Footer";
 import { useBreakpoint } from "../hooks/useBreakpoint";
 
@@ -11,7 +11,7 @@ export default function Faq1() {
     if (breakpoint === "desktop" || breakpoint === "tablet") {
       return (
     <div className="bg-[#ECF0F3] min-h-[100vh] text-[#3C3E41] relative">
-      <FAQHeader />
+      <FAQHeader2 />
       <div className="tablet:w-[700px] desktop:w-[1200px] absolute top-[108px] left-1/2 -translate-x-1/2 flex items-end justify-end">
         <h1 className="text-[#0A85C2] text-[18px] desktop:text-[20px] mobile:hidden">
           POGREBNA PODJETJA
@@ -32,10 +32,7 @@ export default function Faq1() {
             <h3 className="font-medium mb-1">
               Dodatne ugodnosti za prva pridružena pogrebna podjetja? 
             </h3>
-            <img 
-              src="/icon_cancel_white.png"
-              className="absolute right-2 top-4"
-            />
+            
           </div>
           <div>
       
@@ -105,7 +102,7 @@ export default function Faq1() {
     if (breakpoint === "mobile" ) {
       return (
     <div className="bg-[#ECF0F3] min-h-[100vh] text-[#3C3E41]">
-      <FAQHeader />
+      <FAQHeader2 />
 
       <div className="w-full hidden mobile:flex gap-[16px] absolute top-[80px] left-0 right-0 justify-center items-center">
         <div className="w-[140px] h-[35px] flex items-center justify-center rounded-[2px] text-[14px] text-[#6D778E]" 
@@ -134,10 +131,7 @@ export default function Faq1() {
             <h3 className="font-medium mb-1">
               Dodatne ugodnosti za prve partnerje  
             </h3>
-            <img 
-              src="/icon_cancel_white.png"
-              className="absolute right-2 top-4"
-            />
+            
           </div>
           <div>
       
