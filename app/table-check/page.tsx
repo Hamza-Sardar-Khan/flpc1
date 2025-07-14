@@ -10,7 +10,7 @@ import FuneralTable from "../components/appcomponents/FuneralTable"
 export default function Faq1() {
 
     return (
-    <Layout megaMenu={""} isMegaMenuVisible={false} from={"18"} forFooter={""} currentPage="4">
+    <Layout megaMenu={""} isMegaMenuVisible={false} from={"18"} forFooter={"memorypage"}  >
            <FuneralTable />
             
       </Layout>
