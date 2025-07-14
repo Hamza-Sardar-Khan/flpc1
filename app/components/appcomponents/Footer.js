@@ -491,7 +491,7 @@ export function FooterForFaq() {
           <div className="w-[5px] h-[5px] bg-[#DAEBF1] rounded-full"></div>
           <Link href="/koristno-za-cvetlicarne" className="text-[#DAEBF1] ">Stran za cvetličarne</Link>
           <div className="w-[5px] h-[5px] bg-[#DAEBF1] rounded-full"></div>
-          <Link href="/" className="text-[#DAEBF1] ">Pogrebna podjetja</Link>
+          <Link href="/p-faq" className="text-[#DAEBF1] ">Pogrebna podjetja</Link>
         </div>
       </div>
       <div className="flex justify-between items-center tablet:w-[695px] mobile:w-[320px] desktop:w-[1190px] mx-auto bg-[#D4D4D4] h-[1px] mt-[18px] mobile:hidden"></div>
@@ -529,7 +529,7 @@ export function FooterForFaq2() {
           <Link href="/koristno-za-cvetlicarne" className="text-[#DAEBF1] mobile:hidden underline">Stran za cvetličarne</Link>
           <Link href="/koristno-za-cvetlicarne" className="text-[#DAEBF1] mobile:block hidden underline">Cvetličarne</Link>
           <div className="w-[5px] h-[5px] bg-[#DAEBF1] rounded-full underline"></div>
-          <Link href="/" className="text-[#DAEBF1]  underline">Pogrebna podjetja</Link>
+          <Link href="/p-faq" className="text-[#DAEBF1]  underline">Pogrebna podjetja</Link>
         </div>
       </div>
       <div className="flex justify-between items-center tablet:w-[695px] mobile:w-[320px] desktop:w-[1190px] mx-auto bg-[#D4D4D4] h-[1px] mt-[18px] mobile:hidden"></div>
